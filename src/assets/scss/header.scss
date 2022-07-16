@@ -1,0 +1,111 @@
+$manrope:'Manrope', sans-serif;
+$inter:'Inter', sans-serif;
+
+.header-wrap {
+    background: #1A1B1D;
+    box-shadow: 0px 10px 60px #0000004d;
+    position: relative;
+    z-index: 9;
+    @media(max-width:1439px){
+        padding: 0 24px;
+    }
+    &:after{
+        content: "";
+        height: 8px;
+        width: 100%;
+        position: absolute;
+        background: linear-gradient(0deg, #FFDE17 16.07%, #F7941D 95.47%);
+        left: 0;
+        bottom: 0;
+    }
+    .header-main {
+        max-width: 1320px;
+        margin: auto;
+        padding: 18px 0;
+        transition: 0.3s;
+        @media(max-width:991px){
+            display: block;
+            text-align: center;
+            height: 0;
+            padding:65px 0 10px 0;
+        }
+        .logo{
+            @media(max-width:991px){
+                position: absolute;
+                left: 24px;
+                top: 18px;
+                width: 100px;
+            }
+        }
+        .menu-icon{
+            display:none;
+            @media(max-width:991px){
+                display: block;
+                position: absolute;
+                right: 24px;
+                top: 16px;
+                z-index: 99;
+            }
+        }
+        .left-panel{
+            @media(max-width:991px){
+                display:none;
+            }
+            img{
+                cursor: pointer;
+            }
+            img:nth-child(2){
+                margin:0 14px;
+            }
+        }
+        .right-panel{
+            @media(max-width:991px){
+                padding: 20px;
+                display:none;
+            }
+            @media(max-width:460px){
+                padding: 20px 0 10px 0;
+            }
+            button{
+                font-family: $inter;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: 18px;
+                text-transform: initial;
+                border-radius: 100px;
+                @media(max-width:460px){
+                    font-size: 14px;
+                }
+                svg{
+                    width:18px;
+                }
+            }
+            button.btn-join{
+                border:3px solid #00A8DD;  
+                padding: 11px 20px;
+                @media(max-width:460px){
+                    padding: 11px 12px;
+                }
+            }
+            button.btn-mint{
+                background: linear-gradient(180deg, #0E56A7 25.52%, #00A8DD 98.36%);
+                padding: 14px 52px;
+                border: 0;
+                margin-left: 20px;
+                @media(max-width:460px){
+                    padding: 11px 32px;
+                }
+            }
+        }
+    }
+}
+.menu-open{
+    @media(max-width:991px){
+        .left-panel,.right-panel{
+            display:block !important;
+        }
+        .header-main{
+            height: 100% !important;
+        }
+    }
+}

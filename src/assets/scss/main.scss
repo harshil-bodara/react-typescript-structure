@@ -1,0 +1,18 @@
+//header
+@import "./header.scss";
+
+// home 
+@import "./home.scss";
+
+
+@font-face {
+    font-family: supertalls;
+    src: url("../Fonts/Supertalls.otf");
+    src: url("../Fonts/Supertalls.ttf");
+}
+@font-face {
+    font-family: supertalls-italic;
+    src: url("../Fonts/Supertalls\ Italic.otf");
+    src: url("../Fonts/Supertalls.ttf");
+    font-style: italic;
+}
